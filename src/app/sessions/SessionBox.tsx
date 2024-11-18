@@ -30,9 +30,9 @@ export default function SessionBox({ props }: { props: SessionBoxProps }) {
           ))}
         </div>
       </div>
-        <button className="mt-3 font-heading text-white bg-blue-500 text-white rounded-md font-bold text-[16px] py-1.5">
-          SIGN UP
-        </button>
+      <button className="mt-3 font-heading text-white bg-blue-500 text-white rounded-md font-bold text-[16px] py-1.5">
+        SIGN UP
+      </button>
     </div>
   );
 }

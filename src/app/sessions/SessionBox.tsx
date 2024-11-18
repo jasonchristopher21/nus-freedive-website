@@ -11,8 +11,8 @@ interface SessionBoxProps {
 
 export default function SessionBox({ props }: { props: SessionBoxProps }) {
   return (
-    <div className="rounded-xl border border-grey-100 p-5">
-      <div className="flex flex-col gap-1.5 my-auto">
+    <div className="flex flex-col h-full justify-between rounded-xl border border-grey-100 px-5 py-5">
+      <div className="flex flex-col gap-1.5">
         <span className="font-heading text-[17px] font-bold leading-tight w-4/5">
           {props.name.toUpperCase()}
         </span>
@@ -29,10 +29,10 @@ export default function SessionBox({ props }: { props: SessionBoxProps }) {
             <LevelLabel label={level} />
           ))}
         </div>
-        <button className="mb-auto mt-1.5 font-heading text-white bg-blue-500 text-white rounded-md font-bold text-[16px] py-1.5">
+      </div>
+        <button className="mt-1.5 font-heading text-white bg-blue-500 text-white rounded-md font-bold text-[16px] py-1.5">
           SIGN UP
         </button>
-      </div>
     </div>
   );
 }

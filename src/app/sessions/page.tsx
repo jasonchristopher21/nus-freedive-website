@@ -4,6 +4,7 @@ import SessionBox from "./SessionBox";
 
 const dummyData = [
     {
+        id: "1",
         name: "Tuesday Training",
         date: "Tuesday, 15 October 2024",
         time: "17.00 - 19.00",
@@ -11,6 +12,7 @@ const dummyData = [
         levels: ["Beginner", "Intermediate", "Advanced"],
     },
     {
+        id: "2",
         name: "Thursday Safety Refresher (All Levels)",
         date: "Tuesday, 15 October 2024",
         time: "17.00 - 19.00",
@@ -18,6 +20,7 @@ const dummyData = [
         levels: ["Beginner", "Intermediate", "Advanced"],
     },
     {
+        id: "abc",
         name: "Saturday Training",
         date: "Tuesday, 15 October 2024",
         time: "17.00 - 19.00",

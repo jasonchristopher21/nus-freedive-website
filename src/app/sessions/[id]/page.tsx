@@ -6,6 +6,7 @@ import { UserIcon } from "@heroicons/react/24/outline";
 import styles from "@/app/styles";
 import LevelLabel from "@/app/components/common/LevelLabel";
 import TrainingPlan from "./TrainingPlan";
+import Link from "next/link";
 
 const dummyData =
 {
@@ -29,10 +30,12 @@ export default function Page() {
         <div>
             <Header />
             <div className="px-8 py-6 flex flex-col gap-4 max-w-screen-xl mx-auto">
-                <button className="flex gap-4 items-center">
-                    <ChevronLeftIcon className="h-5 text-grey-500" />
-                    <span className={`${styles.heading4} text-grey-500`}>BACK TO UPCOMING SESSIONS</span>
-                </button>
+                <Link href="/sessions">
+                    <button className="flex gap-4 items-center">
+                        <ChevronLeftIcon className="h-5 text-grey-500" />
+                        <span className={`${styles.heading4} text-grey-500`}>BACK TO UPCOMING SESSIONS</span>
+                    </button>
+                </Link>
                 <span className="font-heading font-bold text-[22px] leading-tight">{dummyData.name.toUpperCase()}</span>
                 <div className="flex flex-col gap-1">
                     <span className={`${styles.paragraph}`}>{dummyData.date}</span>

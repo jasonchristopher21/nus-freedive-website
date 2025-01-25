@@ -22,7 +22,7 @@ export default function SessionBox({ props }: { props: SessionBoxProps }) {
         </div>
         <div className="flex flex-wrap gap-1.5">
           <div className="flex pr-1">
-            <UserIcon className="ml-2 h-3.5 my-auto text-grey-500" />
+            <UserIcon className="h-3.5 my-auto text-grey-500" />
             <span className="text-grey-500 text-[14px]">{props.numPax}</span>
           </div>
           {props.levels.map((level) => (

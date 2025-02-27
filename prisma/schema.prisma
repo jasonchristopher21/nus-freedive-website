@@ -16,11 +16,11 @@ model Role {
 }
 
 model User {
-  id            String       @id @default(uuid()) @db.Uuid
+  id            String       @id @db.Uuid // REMOVE @default(uuid()) to prevent Prisma from generating a random UUID
   name          String
   preferredName String?
   email         String       @unique
-  nusnetEmail   String       
+  nusnetEmail   String
   yearOfEntry   Int
   yearOfStudy   YearOfStudy
   remarks       String?
@@ -35,7 +35,10 @@ model User {
   profile       Profile?
   signups       Signup[]
   icSessions    SessionIC[] // Relation to the join table
+
+  @@unique([id]) // Ensure id matches auth.users.id
 }
+
 
 model Profile {
   id          String   @id @default(uuid()) @db.Uuid

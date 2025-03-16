@@ -5,6 +5,8 @@ const styles = {
     "heading4": "font-heading font-bold text-[14px]",
     // "heading5": "font-heading font-bold text-[22px]",
 
+    "paragraph": "text-grey-500 text-[14px]"
+
 }
 
 export default styles

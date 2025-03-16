@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+.bg-video {  
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  /* width: 100%; */
+  /* mask-image: linear-gradient(to top, transparent 0%, black 50%, transparent 100%); */
+  user-select: none;
+  pointer-events: none;
+  /* filter: grayscale(0.8); */
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  /* height: 100%; */
+  width: 177.77777778vh; /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw; /* 100 * 9 / 16 */
+  height: 100%;
+  overflow: hidden;
+}

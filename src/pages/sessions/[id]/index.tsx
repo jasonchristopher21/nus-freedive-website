@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Header from "@/app/components/common/Header";
+import Header from "@/pages/components/common/Header";
 import SessionBox from "../SessionBox";
 import { ChevronLeftIcon } from "@heroicons/react/20/solid";
 import { UserIcon } from "@heroicons/react/24/outline";
-import styles from "@/app/styles";
-import LevelLabel from "@/app/components/common/LevelLabel";
+import styles from "@/pages/styles";
+import LevelLabel from "@/pages/components/common/LevelLabel";
 import TrainingPlan from "./TrainingPlan";
 import Link from "next/link";
 

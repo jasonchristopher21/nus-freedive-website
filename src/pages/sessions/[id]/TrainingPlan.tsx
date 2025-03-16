@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import clsx from "clsx";
-import styles from "@/app/styles";
+import styles from "@/pages/styles";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 interface TrainingPlanProps {
@@ -20,13 +20,13 @@ export default function TrainingPlan({ props }: { props: TrainingPlanProps }) {
         return (
             <button className={clsx('flex flex-col border-2 py-4 px-5 rounded-xl', `border-${color}`)} onClick={() => isSelected ? setSelected("") : setSelected(keyword)}>
                 <div className="flex justify-between w-full">
-                <span className={`${styles.heading3} font-bold`}>{title.toUpperCase()}</span>
-                <ChevronDownIcon
-                    className={clsx(
-                    'w-6 h-6 transform transition-transform duration-300',
-                    isSelected ? 'rotate-180' : 'rotate-0'
-                    )}
-                />
+                    <span className={`${styles.heading3} font-bold`}>{title.toUpperCase()}</span>
+                    <ChevronDownIcon
+                        className={clsx(
+                            'w-6 h-6 transform transition-transform duration-300',
+                            isSelected ? 'rotate-180' : 'rotate-0'
+                        )}
+                    />
                 </div>
                 <div
                     className={clsx(

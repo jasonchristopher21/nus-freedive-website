@@ -18,7 +18,15 @@ export default function TrainingPlan({ props }: { props: TrainingPlanProps }) {
     function sectionComponent({ title, content, keyword, color }: { title: string, content?: string, keyword: string, color: string }) {
         const isSelected = selected === keyword;
         return (
-            <button className={clsx('flex flex-col border-2 py-4 px-5 rounded-xl', `border-${color}`)} onClick={() => isSelected ? setSelected("") : setSelected(keyword)}>
+            <button
+                className={clsx('flex flex-col border-2 py-4 px-5 rounded-xl', {
+                    'border-blue-500': color === 'blue-500',
+                    'border-green-500': color === 'green-500',
+                    'border-orange-500': color === 'orange-500',
+                    'border-red-500': color === 'red-500',
+                })}
+                onClick={() => isSelected ? setSelected("") : setSelected(keyword)}
+            >
                 <div className="flex justify-between w-full">
                     <span className={`${styles.heading3} font-bold`}>{title.toUpperCase()}</span>
                     <ChevronDownIcon

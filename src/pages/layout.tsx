@@ -42,7 +42,7 @@ export default function RootLayout({
    */
   useEffect(() => {
     if (!isAuthenticated && !PUBLIC_PATHS.includes(router.pathname)) {
-      router.push("/login");
+      // router.push("/login");
       return;
     }
   }, [isAuthenticated, router]);

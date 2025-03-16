@@ -28,7 +28,6 @@ const dummyData =
 export default function Page() {
     return (
         <div>
-            <Header />
             <div className="px-8 py-6 flex flex-col gap-4 max-w-screen-xl mx-auto">
                 <Link href="/sessions">
                     <button className="flex gap-4 items-center">
